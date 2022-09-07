@@ -1,5 +1,9 @@
 package W04.javadoc;
 
+/**
+ * class is to create ships (objects)
+ * class contains a constructor and getter & setter methods
+ */
 public class Ship {
 
     private int nr;
@@ -27,6 +31,9 @@ public class Ship {
         this.name = name;
     }
 
+    /**
+     * the method @see race() generates a random time between 300 and 600
+     */
     public void race() {
         int min = 300;
         int max = 600;

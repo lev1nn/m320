@@ -1,7 +1,11 @@
 package W04.javadoc;
 
+/**
+ * creates new ships
+ * adds ships with method c.addShip
+ * starts competition with c.start and prints the results with c.printResult
+ */
 public class Start {
-
 
     public static void main(String[] args) {
 

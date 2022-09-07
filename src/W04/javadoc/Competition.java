@@ -1,14 +1,31 @@
 package W04.javadoc;
 
+/**
+ * class has the main task to make a race and print the results
+ *
+ * @author Levin Schaller
+ * @version 1.0
+ *
+ */
 public class Competition {
 
     private String name;
     private Ship[] ships = new Ship[5];
 
+    /**
+     * creates a competition object
+     *
+     * @param name name of the competition
+     */
     public Competition(String name) {
         this.name = name;
     }
 
+    /**
+     * starts competition with every ship
+     *
+     * @see Ship#race()
+     */
     public void start() {
 
         for (Ship s : this.ships) {
@@ -18,6 +35,10 @@ public class Competition {
         }
     }
 
+    /**
+     * adds ship to array
+     * @param ship
+     */
     public void addShip(Ship ship) {
         for (int i = 0; i < ships.length; i++) {
             if (ships[i] == null) {
@@ -27,6 +48,9 @@ public class Competition {
         }
     }
 
+    /**
+     * prints all results
+     */
     public void printResult() {
         System.out.println("Wettkampf: " + this.name);
 
