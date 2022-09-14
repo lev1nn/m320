@@ -7,7 +7,7 @@ public class Tester {
         UsedCar usedCar = new UsedCar("Mercedes G Class",90000);
         usedCar.setMileage(50000);
         System.out.println("Mercedes G Class Price: " + usedCar.getPrice());
-        
+
         System.out.println("");
 
         CrashedCar crashedCar = new CrashedCar("Nissan Skyline GTR R34", 70000);
