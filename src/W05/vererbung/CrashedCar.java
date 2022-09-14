@@ -1,4 +1,4 @@
-package W05.Vererbung;
+package W05.vererbung;
 
 public class CrashedCar extends Car {
     private int damageLevel;

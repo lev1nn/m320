@@ -1,4 +1,4 @@
-package W05.Vererbung;
+package W05.vererbung;
 
 public class UsedCar extends Car {
     private int mileage;

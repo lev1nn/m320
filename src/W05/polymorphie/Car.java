@@ -1,4 +1,4 @@
-package W05.Vererbung;
+package W05.polymorphie;
 
 public class Car {
     private String model;
@@ -9,7 +9,11 @@ public class Car {
         this.price = price;
     }
 
-    protected int getCarPrice() {
+    public double getPrice() {
         return price;
+    }
+
+    public String getModel() {
+        return model;
     }
 }
