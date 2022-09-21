@@ -1,10 +1,11 @@
-package W05.vererbung;
+package W06.abstraktion;
 
 public class CrashedCar extends Car {
     private int damageLevel;
 
-    public CrashedCar(String model, int price) {
+    public CrashedCar(String model, int price, int damageLevel) {
         super(model, price);
+        this.damageLevel = damageLevel;
     }
 
     public double getPrice() {
@@ -15,14 +16,10 @@ public class CrashedCar extends Car {
             default -> 1;
         };
 
-        return getCarPrice() * remainingPrice;
+        return price * remainingPrice;
     }
 
     public int getDamageLevel() {
         return damageLevel;
-    }
-
-    public void setDamageLevel(int damageLevel) {
-        this.damageLevel = damageLevel;
     }
 }
