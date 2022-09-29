@@ -14,7 +14,7 @@ public class Main {
         System.out.println("now you can add as many players as you want, to start type 'start'");
         System.out.println();
 
-        for (int i = 0; addPlayer; i++) {
+        /*for (int i = 0; addPlayer; i++) {
             System.out.printf("name from player %d%n", i + 1);
             String name = scanner.nextLine();
 
@@ -26,7 +26,24 @@ public class Main {
             players.add(player);
 
             System.out.println("");
-        }
+        }*/
+
+        Character player;
+
+        player = new Character("player1", 100, 25);
+        players.add(player);
+
+        player = new Character("player2", 100, 25);
+        player.setWeapon(new wButterflyKnife());
+        players.add(player);
+
+        player = new Character("player3", 100, 25);
+        player.setWeapon(new wAK47());
+        players.add(player);
+
+        player = new Character("player4", 100, 25);
+        player.setWeapon(new wAWP());
+        players.add(player);
 
         System.out.println("\n--------------------\n");
 

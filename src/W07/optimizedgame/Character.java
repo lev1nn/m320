@@ -1,16 +1,24 @@
 package W07.optimizedgame;
 
-import java.util.Random;
-
 public class Character {
     private String name;
     private int hp;
     private int ap;
+    private Weapon weapon;
 
     public Character(String name, int hp, int ap) {
         this.name = name;
         this.hp = hp;
         this.ap = ap;
+        this.weapon = new wDeagle();
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
     }
 
     public String getName() {
@@ -38,8 +46,6 @@ public class Character {
     }
 
     public int attack() {
-        Random random = new Random();
-        int attack = random.nextInt(ap + 1);
-        return attack;
+        return weapon.attack(ap);
     }
 }
