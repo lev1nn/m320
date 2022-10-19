@@ -11,10 +11,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean addPlayer = true;
 
-        System.out.println("now you can add as many players as you want, to start type 'start'");
+        /*System.out.println("now you can add as many players as you want, to start type 'start'");
         System.out.println();
 
-        /*for (int i = 0; addPlayer; i++) {
+        for (int i = 0; addPlayer; i++) {
             System.out.printf("name from player %d%n", i + 1);
             String name = scanner.nextLine();
 

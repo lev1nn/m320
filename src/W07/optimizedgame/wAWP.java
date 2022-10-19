@@ -10,6 +10,7 @@ public class wAWP implements Weapon {
         return random.nextInt(ap + 1);
     }
 
+    @Override
     public String getWeaponName() {
         return "AWP";
     }

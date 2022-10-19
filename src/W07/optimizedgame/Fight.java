@@ -41,7 +41,7 @@ public class Fight {
                     attack2 = player1.getHp();
                 }
                 player1.setHp(player1.getHp() - attack2);
-                System.out.printf(ANSI_GREEN + "%s attacks with a %s" + ANSI_RESET + " - %s loses %d hp%n", player2.getName(), player2.getWeapon().getWeaponName(), player1.getName(), attack2);
+                System.out.printf(ANSI_GREEN + "%s attacks with %s" + ANSI_RESET + " - %s loses %d hp%n", player2.getName(), player2.getWeapon().getWeaponName(), player1.getName(), attack2);
                 System.out.printf("%s: hp = %d%n", player2.getName(), player2.getHp());
                 if (attack2 != 0) {
                     System.out.printf("%s: " + ANSI_RED + "hp = %d%n" + ANSI_RESET, player1.getName(), player1.getHp());
@@ -54,10 +54,10 @@ public class Fight {
             }
         }
         if (player1.getHp() > 0) {
-            System.out.printf(ANSI_GREEN + "%s wins with a %s with %d hp left! %n" + ANSI_RESET, player1.getName(), player1.getWeapon().getWeaponName(), player1.getHp());
+            System.out.printf(ANSI_GREEN + "%s wins with %s with %d hp left! %n" + ANSI_RESET, player1.getName(), player1.getWeapon().getWeaponName(), player1.getHp());
             Main.players.remove(player2);
         } else {
-            System.out.printf(ANSI_GREEN + "%s wins with a %s with %d hp left! %n" + ANSI_RESET, player2.getName(), player2.getWeapon().getWeaponName(), player2.getHp());
+            System.out.printf(ANSI_GREEN + "%s wins with %s with %d hp left! %n" + ANSI_RESET, player2.getName(), player2.getWeapon().getWeaponName(), player2.getHp());
             Main.players.remove(player1);
         }
         System.out.println(line);
